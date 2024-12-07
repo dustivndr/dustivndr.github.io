@@ -1,3 +1,3 @@
 # Dustiv's small personal website
 
-This is where I can publish some of my works
+This is where I can show some of my works
