@@ -1,7 +1,16 @@
-<footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    <ul>
-        <li><a href="https://github.com/DustIv">GitHub</a></li>
-        <li><a href="https://x.com/2007Dust">X/Twitter</a></li>
-    </ul>
-</footer>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-left">
+        <h3 class="footer-title">Dustiv</h3>
+        <p class="footer-copyright">
+          &copy; 2019-{{ site.time | date: "%Y" }} Dustiv. All rights reserved.
+        </p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
