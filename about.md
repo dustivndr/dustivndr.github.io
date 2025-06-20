@@ -23,6 +23,7 @@ This site is a personal space where I share my work, ideas, and progress as I gr
 
 I built this site to document my journey, experiment with design and code, and have a place to put things I’m proud of — whether it’s a project, a photo series, or a small learning breakthrough.
 
+<br>
 
 > *I’m still learning — and this site is growing alongside me.*
 
