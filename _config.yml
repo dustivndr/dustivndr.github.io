@@ -1,2 +1,19 @@
+title: "Dustin Ivander"
 domain: dustivndr.github.io
 url: https://dustivndr.github.io
+baseurl: ""
+
+social:
+  github:  "https://github.com/dustivndr"
+  linkedin: "https://linkedin.com/in/dustin-ivander"
+  twitter: "https://twitter.com/dustivndr"
+  instagram: "https://instagram.com/dustivndr"
+  email: "you@example.com"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .DS_Store
+  - Thumbs.db
