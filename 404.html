@@ -1,0 +1,62 @@
+---
+layout: none
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        404 Not Found | {{ site.title }}
+    </title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-family: Consolas, monospace;
+            font-size: 6rem;
+            margin: 0;
+        }
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        a {
+            color: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+            margin-top: 1rem;
+            display: inline-block;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>404</h1>
+    <p>The page not found...</p>
+    <p>Check your URL again or go back to the <a href="{{ '/' | relative_url }}">homepage</a>.</p>
+</body>
+
+</html>
