@@ -13,17 +13,23 @@ permalink: /404.html
         404 Not Found | {{ site.title }}
     </title>
     <style>
+        html,
         body {
             margin: 0;
-            height: 100vh;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #111;
+            color: #fff;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 1rem;
         }
 
         h1 {
@@ -49,6 +55,26 @@ permalink: /404.html
 
         a:hover {
             opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
