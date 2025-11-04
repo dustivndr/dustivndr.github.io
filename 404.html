@@ -20,7 +20,7 @@ permalink: /404.html
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background-color: #111;
+            background-color: #333;
             color: #fff;
         }
 
@@ -30,6 +30,10 @@ permalink: /404.html
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+
+        div {
+            max-width: 90%;
         }
 
         h1 {
@@ -80,9 +84,12 @@ permalink: /404.html
 </head>
 
 <body>
-    <h1>404</h1>
-    <p>The page not found...</p>
-    <p>Check your URL again or go back to the <a href="{{ '/' | relative_url }}">homepage</a>.</p>
+
+    <div>
+        <h1>404</h1>
+        <p>The page not found...</p>
+        <p>Check your URL again or go back to the <a href="{{ '/' | relative_url }}">homepage</a></p>
+    </div>
 </body>
 
 </html>
