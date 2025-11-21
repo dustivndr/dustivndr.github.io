@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0c0c0c;
+    color: #e0e0e0;
+}
+
+main, header, footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+hr {
+    border: 1px dashed #e0e0e0;
+    margin: 20px 0;
+}
+
+a:link, a:visited {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: #0c0c0c;
+    text-decoration: none;
+    background-color: #e0e0e0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
