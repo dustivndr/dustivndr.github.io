@@ -10,6 +10,10 @@ social:
   instagram: "https://instagram.com/dustivndr"
   email: "dustinduck@duck.com"
 
+collections:
+  projects:
+    output: true
+
 exclude:
   - README.md
   - Gemfile
