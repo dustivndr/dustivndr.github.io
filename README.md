@@ -1,1 +1,3 @@
 Just a personal website to store my projects, cv, articles, and things...
+
+Might not look good on mobile devices yet.
