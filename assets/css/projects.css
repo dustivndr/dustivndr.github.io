@@ -4,9 +4,9 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Consolas, Courier, monospace;
     background-color: #0c0c0c;
-    color: #e0e0e0;
+    color: #fff;
 }
 
 main, header, footer {
@@ -15,18 +15,17 @@ main, header, footer {
     padding: 0 20px;
 }
 
-main {
+section {
     padding: 20px;
 }
 
 hr {
     border: 1px dashed #e0e0e0;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 
 nav {
     margin: 0;
-    /* gap: 20px; */
 }
 
 a:link, a:visited {
@@ -53,6 +52,18 @@ footer {
 
 p {
     margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    header div, footer div {
+        padding: 0 10px
+    }
+
+    section {
+        padding: 10px;
+    }
+
 }
 
 .left {

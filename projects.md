@@ -8,6 +8,7 @@ layout: projects
 List of projects (from github):
 
 <ul>
+    {% assign sorted = site.projects | sort: "project-id" %}
     {% for project in site.projects %}
         <li>
             <a href="{{ project.url }}">
