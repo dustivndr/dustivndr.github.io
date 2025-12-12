@@ -1,7 +1,6 @@
 ---
 title: cowboy-cpp
 layout: projects
-permalik: /projects/cowboy-cpp
 project-id: 1
 ---
 

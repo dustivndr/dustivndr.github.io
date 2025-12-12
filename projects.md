@@ -9,7 +9,7 @@ List of github projects:
 
 <ul>
     {% assign sorted = site.projects | sort: "project-id" %}
-    {% for project in site.projects %}
+    {% for project in sorted %}
     {% unless project.hidden %}
         <li>
             <a href="{{ project.url }}">

@@ -13,6 +13,7 @@ social:
 collections:
   projects:
     output: true
+    permalink: /projects/:name/
 
 exclude:
   - README.md
