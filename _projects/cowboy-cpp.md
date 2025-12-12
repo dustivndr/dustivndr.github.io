@@ -1,12 +1,13 @@
 ---
 title: cowboy-cpp
 layout: projects
+permalik: /projects/cowboy-cpp
 project-id: 1
 ---
 
 # Cowboy C++, Battle and Quiz Game
 
-<u>Project status: Ongoing</u>
+<u>Project status: Ongoing</u>, view it on [GitHub](https://github.com/dustivndr/cowboy-cpp).
 
 Simple ASCII battle and quiz game in C++, works in Windows/Linux Terminal (at least in Fedora, where I write the code).
 
