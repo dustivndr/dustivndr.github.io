@@ -1,5 +1,5 @@
 ---
-title: cowboy-cpp
+title: Cowboy C++
 layout: projects
 project-id: 1
 ---
