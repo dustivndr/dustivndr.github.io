@@ -18,42 +18,61 @@
         <header> {% include main-header.html %} </header>
         <main class="main-content">
         
-                <section id="intro">
+                <section id="intro" class="full-container">
         
-                    <p>sdafdfadwdjofadasdkc</p>
-        
-                </section>
-        
-                <section id="projects">
-        
-                    <h2>Projects</h2>
-                    <p>Recent projects</p>
-        
-                    {% assign sorted = site.projects | sort: "project-id" %}
-                    {% for project in sorted %}
-                    {% unless project.hidden %}
-                        <li>
-                            <a href="{{ project.url }}">
-                                {{ project.title }}
-                            </a>
-                        </li>
-                    {% endunless %}
-                    {% endfor %}
-        
-                    <a href="{{ '/projects' | relative_url }}" style="text-decoration: none;">view more...</a>
+                    <h1>Header 1</h1>
+                    <h2>Header 2</h2>
+                    <h3>Header 3</h3>
+                    <h4>Header 4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis recusandae corrupti accusamus necessitatibus doloribus perspiciatis fugit possimus. Molestiae aspernatur autem fuga quo neque est repellat nisi adipisci facilis ut.</p>
         
                 </section>
+
+                <div class="two-column">
+
+                    <div class="left-column">
+    
+                        <section id="projects" class="left-container">
+                
+                            <h2>Projects</h2>
+                            <p>Recent projects</p>
         
-                <section id="blogs">
-        
-                    <h2>Blog</h2>
-                    <p>Recent blogs</p>
-        
-        
-                    <a href="{{ '' | relative_url }}" style="text-decoration: none;"></a>
-        
-                </section>
-        
+                            <!-- <div>
+                                {% assign sorted = site.projects | sort: "project-id" %}
+                                {% for project in sorted %}
+                                {% unless project.hidden %}
+                                    <li>
+                                        <a href="{{ project.url }}">
+                                            {{ project.title }}
+                                        </a>
+                                    </li>
+                                {% endunless %}
+                                {% endfor %}
+                            </div> -->
+                
+                            <a href="{{ '/projects' | relative_url }}" style="text-decoration: none;">view more...</a>
+                
+                        </section>
+                
+                        <section id="blogs" class="left-container">
+                
+                            <h2>Blog</h2>
+                            <p>Recent blogs</p>
+                
+                            <a href="{{ '' | relative_url }}" style="text-decoration: none;"></a>
+                
+                        </section>
+    
+                    </div>
+
+                    <div class="right-column">
+                        <section class="right-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus error, saepe ipsa dolorum, dolore alias eligendi, laudantium quidem modi aut enim ab repellat culpa! Voluptatem eveniet a et impedit.</p>
+                        </section>
+                    </div>
+
+                </div>
+
                 {{ content }}
         
             </main>
