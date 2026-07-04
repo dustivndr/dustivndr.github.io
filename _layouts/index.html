@@ -50,16 +50,16 @@
                                 {% endfor %}
                             </div> -->
                 
-                            <a href="{{ '/projects' | relative_url }}" style="text-decoration: none;">view more...</a>
+                            <p><a href="{{ '/projects' | relative_url }}" style="text-decoration: none;">view more...</a></p>
                 
                         </section>
                 
                         <section id="blogs" class="left-container">
                 
                             <h2>Blog</h2>
-                            <p>Recent blogs</p>
+                            <p>No recent blogs</p>
                 
-                            <a href="{{ '' | relative_url }}" style="text-decoration: none;"></a>
+                            <p><!-- <a href="{{ '' | relative_url }}" style="text-decoration: none;"></a> --></p>
                 
                         </section>
     
@@ -67,7 +67,7 @@
 
                     <div class="right-column">
                         <section class="right-container">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus error, saepe ipsa dolorum, dolore alias eligendi, laudantium quidem modi aut enim ab repellat culpa! Voluptatem eveniet a et impedit.</p>
+                            {% include side-panel.html %}
                         </section>
                     </div>
 
