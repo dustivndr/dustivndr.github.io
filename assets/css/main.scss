@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-weight: 300;
+    font-weight: $thin-font-weight;
     margin: 0;
     padding: 5px;
 }
@@ -144,6 +144,27 @@ footer {
     margin-top: 10px;
     // debug
     // border: 1px solid black;
+}
+
+main a {
+    color: $main-text-color;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+main a:hover {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+main a:active {
+    color: #ff0000;
+}
+
+main ul {
+    font-weight: $thin-font-weight;
+    margin: 0;
+    padding-left: 1.5rem;
 }
 
 .two-column {
