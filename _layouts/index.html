@@ -7,12 +7,96 @@
     <title>
         Homepage | {{ site.title }}
     </title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}">
 </head>
 
 <body>
 
-    {{ content }}
+    <div class="main-background"></div>
+    <div class="page">
+        <header> {% include main-header.html %} </header>
+        <main class="main-content">
+        
+                <section id="intro" class="full-container">
+        
+                    <h2>Hi There!</h2>
+                    <p>
+                        I'm Dust. Welcome to my small website. Here are some of the things I can share; please look around.
+                    </p>
+                    <p>
+                        I made this website around mid 2026, during my college's end-of-semester holiday. 
+                        The main inspiration for this website is Windows Vista, but due to the lack of design skills I have, here you go; if it works, it works.
+                    </p>
+                    <p>
+                        For your info:
+                        <ul>
+                            <li>
+                                I'm a photographer; I also used to be an amateur cinematographer. 
+                                All of the films are intended for Film Festivals in Indonesia; 
+                                one of them even won in a <a href="https://www.instagram.com/balikpapanfilmfestival/p/DRZUtA5kqJ5/" target="_blank" title="BalikpapanFilmFestival Instagram Post">National Film Festival in 2025</a>.
+                            </li>
+                            <li>
+                                I'm currently studying Informatics at <a href="https://istts.ac.id/" target="_blank">iSTTS</a>, Indonesia.
+                            </li>
+                            <li>
+                                And of course, I play <a href="https://steamcommunity.com/id/latedust/" target="_blank" title="Checkout Dust's Steam Profile">games</a>.
+                            </li>
+                        </ul>
+                    </p>
+
+                </section>
+
+                <div class="two-column">
+
+                    <div class="left-column">
+    
+                        <section id="projects" class="left-container">
+                
+                            <h2>Projects</h2>
+                            <p>Recent projects I made</p>
+        
+                            <!-- <div>
+                                {% assign sorted = site.projects | sort: "project-id" %}
+                                {% for project in sorted %}
+                                {% unless project.hidden %}
+                                    <li>
+                                        <a href="{{ project.url }}">
+                                            {{ project.title }}
+                                        </a>
+                                    </li>
+                                {% endunless %}
+                                {% endfor %}
+                            </div> -->
+                
+                            <p><a href="{{ '/projects' | relative_url }}" style="text-decoration: none;">view more...</a></p>
+                
+                        </section>
+                
+                        <section id="blogs" class="left-container">
+                
+                            <h2>Blog</h2>
+                            <p>No recent blogs yet</p>
+                
+                            <p><!-- <a href="{{ '' | relative_url }}" style="text-decoration: none;"></a> --></p>
+                
+                        </section>
+    
+                    </div>
+
+                    <aside class="right-column">
+                        <section class="right-container">
+                            {% include side-panel.html %}
+                        </section>
+                    </aside>
+
+                </div>
+
+                {{ content }}
+        
+            </main>
+        <footer> {% include main-footer.html %} </footer>
+    </div>
 
 </body>
 

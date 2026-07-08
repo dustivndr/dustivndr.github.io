@@ -1,6 +1,4 @@
 ---
-title: coming soon
+title: Dustiv
 layout: index
 ---
-
-Comingsoon
